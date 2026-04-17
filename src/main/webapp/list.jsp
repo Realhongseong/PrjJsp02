@@ -9,9 +9,9 @@
 	
 	// dn조회
 	String driver = "oracle.jdbc.OracleDriver";
-	String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-	String dbuid = "sky";
-	String dbpwd = "1234";
+	String url    = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+	String dbuid  = "sky";
+	String dbpwd  = "1234";
 	
 	Class.forName(driver);
 	Connection conn = DriverManager.getConnection(url, dbuid, dbpwd);
@@ -47,7 +47,6 @@
 <body>
 	<h2>List jsp</h2>
 	<p>검색할 이름:<%= username %></p>
-	
 	<ul><%= tag%></ul>
 </body>
 </html>
