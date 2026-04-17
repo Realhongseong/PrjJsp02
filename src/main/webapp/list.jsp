@@ -28,9 +28,7 @@
 		String ousername = rs.getString("username");
 		String email = rs.getString("email");
 		
-		tag += "<li>" + userid + "</li>";
-		tag += "<li>" + ousername + "</li>";
-		tag += "<li>" + email + "</li>";
+		tag += "<li>" + userid + "," + ousername + "," + email + "</li>";
 		
 	}
 	
@@ -50,7 +48,7 @@
 	<h2>List jsp</h2>
 	<p>검색할 이름:<%= username %></p>
 	
-	<ul><%= %></ul>
+	<ul><%= tag%></ul>
 </body>
 </html>
 
